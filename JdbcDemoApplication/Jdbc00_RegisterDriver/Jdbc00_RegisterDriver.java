@@ -1,6 +1,6 @@
 package JdbcDemoApplication;
 
-public class Jdbc00_LoadingDriver {
+public class Jdbc00_ReginsterDriver {
     public static void main(String[] args) {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
