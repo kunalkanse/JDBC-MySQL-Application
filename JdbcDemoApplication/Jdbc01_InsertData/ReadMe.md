@@ -9,7 +9,7 @@
   Statement stmt = connection.createStatement();
 
 ### STEP 4 : EXECUTE SQL QUERY
-  int count = statement.executeUpdate("insert into emp1 values(1,'aniket','test',38000)");  // DML
+  int count = stmt.executeUpdate("insert into emp1 values(1,'aniket','test',38000)");  // DML
   
   Resultset rs = stmt.executeQuery("select * from emp");  // DQL
 
