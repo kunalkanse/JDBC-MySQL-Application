@@ -10,6 +10,7 @@
 
 ### STEP 4 : EXECUTE SQL QUERY
   int count = statement.executeUpdate("insert into emp1 values(1,'aniket','test',38000)");  // DML
+  
   Resultset rs = stmt.executeQuery("select * from emp");  // DQL
 
 ### STEP 5 : PROCESS THE DATA
