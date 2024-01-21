@@ -3,7 +3,7 @@
   Class.forName("com.mysql.cj.jdbc.Driver");
   
 ### STEP 2 : ESTABLISH THE CONNECTION
-  connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/empj2ee", "root","Kunal@447");
+  connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/empj2ee", "root","Pass@123");
 
 ### STEP 3 : CREATE STATEMENT PLATFORM
   Statement stmt = connection.createStatement();
