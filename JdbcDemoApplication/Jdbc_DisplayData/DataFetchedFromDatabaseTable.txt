@@ -1,8 +1,0 @@
-__________________________________
-ID	Name	  Department	Salary
-----------------------------------
-1	  kunal	  support	25000.99
-2	  rohit	  devops	23956.99
-3	  swapnil	FrontEnd	65985.3
-2	  kunal   developer	47750.23
-6	  kunal kanse	manual testing	17000.0
