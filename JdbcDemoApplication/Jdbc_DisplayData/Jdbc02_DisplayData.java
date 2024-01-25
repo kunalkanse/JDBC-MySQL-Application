@@ -1,4 +1,7 @@
-package JdbcDemoApplication.Jdbc03_DisplayData;
+package JdbcDemoApplication.Jdbc02_DisplayData;
+
+// JDBC Program to Retrieve Data from database table,
+// store into Arraylist &  Display
 
 import java.sql.*;
 import java.util.ArrayList;
