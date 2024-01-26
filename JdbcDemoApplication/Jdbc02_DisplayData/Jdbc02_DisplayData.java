@@ -12,6 +12,7 @@ public class Jdbc03_DisplayData {
 
         ArrayList empDetails = new ArrayList(); // To store Data
 
+        // reference of interfaces
         Connection connection = null;
         Statement statement = null;
         ResultSet rs = null;
