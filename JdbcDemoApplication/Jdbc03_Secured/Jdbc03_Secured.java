@@ -10,6 +10,7 @@ public class Jdbc03_Secured {
 
     private static Scanner scanner = new Scanner(System.in);
     private static Connection connection;
+    // declare Connection reference as private to make secure.
 
     static{
         try{
