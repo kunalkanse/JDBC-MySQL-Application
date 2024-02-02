@@ -7,7 +7,7 @@ import java.sql.*;
 public class Jdbc04_Boilerplate {
     
     Statement statement = null;
-    // Connection conn = null;
+    // Connection conn = null; 
     
     public void setConnection(){
         try {
