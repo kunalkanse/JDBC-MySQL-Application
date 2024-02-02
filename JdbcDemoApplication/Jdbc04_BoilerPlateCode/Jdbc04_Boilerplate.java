@@ -1,5 +1,7 @@
 package JdbcDemoApplication.Jdbc05_BoilerMain;
 
+// This is generalized class which contains common code which is required for very JDBC application
+
 import java.sql.*;
 
 public class Jdbc04_Boilerplate {
