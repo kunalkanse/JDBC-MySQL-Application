@@ -6,6 +6,9 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+// This class is extending the class which contains common statements which are required in every JDBC Application
+// Jdbc05_Boilerplate is the generalized class which contains general code
+
 public class Jdbc04_BoilerMain extends Jdbc05_Boilerplate {
     public static void main(String[] args) {
         operation();
@@ -16,7 +19,8 @@ public class Jdbc04_BoilerMain extends Jdbc05_Boilerplate {
         ArrayList<String> data = new ArrayList<>();
 
         boiler.setConnection();
-        Statement statement = boiler.getStatement();
+        Statement statement = boiler.getStatement();    // getting from Generalized class which is super class
+        // we can call it directly by declaring it static
 
         if (statement != null){
             System.out.println("Connection Successfully Established");
