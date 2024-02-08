@@ -2,7 +2,7 @@ package JdbcDemoApplication.jdbc06_RetrivingUsingColumnNo;
 
 import java.sql.*;
 
-public class Jdbc06_RetrieveUsingColumnNo {
+public class Jdbc05_RetrieveUsingColumnNo {
     public static void main(String[] args) {
         Connection connection = null;
         Statement statement = null;
