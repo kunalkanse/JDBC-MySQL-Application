@@ -11,7 +11,7 @@ public class Jdbc06_loginCaseSensitive {
         ResultSet rs = null;
         boolean status = false;
 
-        System.out.print("Enter UserName : ");
+        System.out.print("Enter UserName : "); 
         String username = sc.next();
 
         System.out.print("Enter Password : ");
