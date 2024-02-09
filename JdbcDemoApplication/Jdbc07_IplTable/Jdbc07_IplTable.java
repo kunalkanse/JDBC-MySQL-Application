@@ -10,7 +10,7 @@ public class Jdbc07_IplTable {
         try {
             con= DriverManager.getConnection("jdbc:mysql://localhost:3306/empj2ee","root","Kunal@447");
             st= con.createStatement();
-        } catch (SQLException e) {
+        } catch (SQLException e) { 
             throw new RuntimeException(e);
         }
     }
