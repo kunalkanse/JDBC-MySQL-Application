@@ -15,7 +15,7 @@ public class Jdbc07_IplTable {
         }
     }
     public static void main(String[] args) {
-        operation();
+        operation(); 
 
     }
     private static void operation(){
