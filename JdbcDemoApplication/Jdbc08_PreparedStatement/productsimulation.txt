@@ -1,0 +1,8 @@
+product_id  product_name  product_cat  product_qty  product_price  
+----------  ------------  -----------  -----------  ---------------
+         1  X-BOX         GAMING                20         49999.99
+         2  PS-5          GAMING                20         54239.65
+         3  CONSOLE       GAMING                20         49999.99
+         4  CHARGER       ELECTRONICS           20         19999.99
+         5  CPU           ELECTRONICS           20         34223.45
+         6  Asus_Rog_5    gaming                12            29999
