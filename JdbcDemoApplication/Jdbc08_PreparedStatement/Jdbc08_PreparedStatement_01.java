@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.util.Scanner;
 
 
-public class Jdbc09_PreparedStatement_01 {
+public class Jdbc08_PreparedStatement_01 {
 
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
