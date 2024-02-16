@@ -3,7 +3,7 @@ package JdbcDemoApplication.Jdbc09_PreparedStatement;
 import java.util.Scanner;
 import java.sql.*;
 
-public class Pstmt02 {
+public class Jdbc08_PreparedStatement_02 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
