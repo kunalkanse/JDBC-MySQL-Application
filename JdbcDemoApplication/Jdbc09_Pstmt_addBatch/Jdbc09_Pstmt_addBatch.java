@@ -9,13 +9,13 @@ import java.util.ArrayList;
 public class Jdbc09_Pstmt_addBatch {
     public static void main(String[] args) {
       
-        ArrayList<Product> productList=new ArrayList<>();
+        ArrayList<ProductDTO> productList=new ArrayList<>();
       
-        productList.add(new Product(1,"X-BOX","GAMING",20,49999.99));
-        productList.add(new Product(2,"PS-5","GAMING",20,54239.65));
-        productList.add(new Product(3,"CONSOLE","GAMING",20,49999.99));
-        productList.add(new Product(4,"CHARGER","ELECTRONICS",20,19999.99));
-        productList.add(new Product(5,"CPU","ELECTRONICS",20,34223.45));
+        productList.add(new ProductDTO(1,"X-BOX","GAMING",20,49999.99));
+        productList.add(new ProductDTO(2,"PS-5","GAMING",20,54239.65));
+        productList.add(new ProductDTO(3,"CONSOLE","GAMING",20,49999.99));
+        productList.add(new ProductDTO(4,"CHARGER","ELECTRONICS",20,19999.99));
+        productList.add(new ProductDTO(5,"CPU","ELECTRONICS",20,34223.45));
 
       
         Connection con;
@@ -26,7 +26,7 @@ public class Jdbc09_Pstmt_addBatch {
             pstmt=con.prepareStatement("insert into productsimulation values (?,?,?,?,?)");//query to insert values inside the sql table.
 
             //for each loop used for getting the values from the arraylist and setting it to the pstmt query
-            for (Product data:productList) /*arraylist name */
+            for (ProductDTO data:productList) /*arraylist name */
             {
                 pstmt.setInt(1,data.getProductId());
                 pstmt.setString(2, data.getProductName());
