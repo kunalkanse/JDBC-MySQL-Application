@@ -18,7 +18,7 @@ public class Jdbc09_Pstmt_addBatch {
         productList.add(new ProductDTO(5,"CPU","ELECTRONICS",20,34223.45));
 
       
-        Connection con;
+        Connection con; 
         PreparedStatement pstmt;
         try {
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/empj2ee", "root", "Kunal@447");
