@@ -1,10 +1,5 @@
 # JDBC-MySQL-Application
-
-JDBC stands for JAVA DATABASE CONNECTIVITTY.
-
-JDBC is an API or technology which can be used to communicate with database servers.
-
-# JDBC
+# JDBC NOTES BY Mr. CHETAN GHODEKAR
 
    ## Q1. What is API ?
           1) API stands for Application Programming Interface.
@@ -13,13 +8,10 @@ JDBC is an API or technology which can be used to communicate with database serv
           4) API mainly classified into 2 types 1)Private API 2)Open API
      
    ## What is JDBC ?
-          JDBC stands for java database connectivity.
-          JDBC is a technology which can be used to establish the connection
-          between java and database software.
-          Incase of JDBC we have to use database API to communicate with
-          database software which is also known as JDBC API.
+          1) JDBC stands for java database connectivity.
+          2) JDBC is a technology which can be used to establish the connection between java and database software.
+          3) Incase of JDBC we have to use database API to communicate with database software which is also known as JDBC API.
 
-    
    ## Java app. can communicate with database app. by using following component of db API
           A)Driver :- is responsible to convert object oriented instructions into
           simple sql format as well as sql info. will be converted into object
@@ -32,59 +24,48 @@ JDBC is an API or technology which can be used to communicate with database serv
           table record will be store into resultset object
           
    ## What is Maven?
-         Maven is a Project Management tool specifically dev. for java
-         application.
+         Maven is a Project Management tool specifically dev. for javaapplication.
          By using Maven we can automate the project Management process.
          The Maven tool is developed by Apache Software Foundation.
-         So with the help of maven developers can easily create project
-         structure.
-         Superior dependency management i.e. Project will automatic
-         updating, dependency closure.
-         Dependency management :- Maven encourages to use a central
-         repository of jars and other dependencies.
+         So with the help of maven developers can easily create project structure.
+         Superior dependency management i.e. Project will automatic  updating, dependency closure.
+         Dependency management :- Maven encourages to use a central repository of jars and other dependencies.
          Maven is a build automation tool used primarily for Java projects.
-         Maven can also be used to build and manage projects written in C#,
-         Ruby, Scala etc.
+         Maven can also be used to build and manage projects written in C#, Ruby, Scala etc.
          
    ## What are the Steps to develop a JDBC app?
          we have to follow 6 steps to developed jdbc app
-         1)Load & register the driver -> To dev. JDBC application its
-         mandatory load and register the driver software.
-         2)Establish the connection -> We can establish the connection
-         between java and database applications by using getConnection().
-         3)create a statement of platform -> After connection we have to create
-         a statement platform inorder to execute sql query.
+            1) Load & register the driver -> To dev. JDBC application its  mandatory load and register the driver software.
+            2) Establish the connection -> We can establish the connection between java and database applications by using getConnection().
+            3)create a statement of platform -> After connection we have to create a statement platform inorder to execute sql query.
+         
          We can create platform by using 3 Ways
-         A)Statement(Interface)
-         B)PreparedStatement(Interface)
-         C)CallableStatement(Interface)
-         4)Execute query -> We can execute sql query by using 3 diff. ways
-         1) executeUpdate() can be used for the execution the dml
-         set
-         2)executeQuery() can be used to for the execution dql
-         statement
-         3)execute() is capable to execute dml as well as dql
-         statement
-         5)process resultset -> After the execution of the query database
-         server will return a group of multiple records. Which will be present
-         inside the result set object.
-         6)close costly resources -> After JDBC transaction we have to close
-         all the costly resources present inside the java file.
-         How to create platform by using different types of statements
+            A)Statement(Interface)
+            B)PreparedStatement(Interface)
+            C)CallableStatement(Interface)
+         
+            4)Execute query -> We can execute sql query by using 3 diff. ways
+               1) executeUpdate() can be used for the execution the dml set
+               2)executeQuery() can be used to for the execution dql statement
+               3)execute() is capable to execute dml as well as dql statement
+            
+            5)process resultset -> After the execution of the query database server will return a group of multiple records. Which will be present
+               inside the result set object.
+         
+            6)close costly resources -> After JDBC transaction we have to close all the costly resources present inside the java file.
+        
+   ## How to create platform by using different types of statements
          In JDBC we can create statement platform by using three interfaces
-         1)Statement(I)
-         2)Prepared Statement(I)
-         3)Callable Statement(i)
-         Statement(I) can be used to create a basic platform to execute sql
-         query.
+            1)Statement(I)
+            2)Prepared Statement(I)
+            3)Callable Statement(i)
+         
+         Statement(I) can be used to create a basic platform to execute sql query.
          Statement(I) is mainly used to execute different sql query.
-         In the case of Statement(i) sql query will be compiled and executed for
-         every transaction.in Statement(I) We can't use place holders.
+         In the case of Statement(i) sql query will be compiled and executed for every transaction.in Statement(I) We can't use place holders.
          Prepared Statement(I) extends the properties of statement(I).
-         We can use Prepared Statement(I) to execute the same sql query
-         multiple times.In case of prepared Statement(I) sql query will be
-         compiled once and executed multiple times.In Prepared Statement(I)
-         Supports Placeholders for dynamic values.
+         We can use Prepared Statement(I) to execute the same sql query multiple times.In case of prepared Statement(I) sql query will be
+         compiled once and executed multiple times.In Prepared Statement(I) Supports Placeholders for dynamic values.
          
    ## What is a placeholder?
          A SQL prepared statement in JDBC terms is a complete SQL
