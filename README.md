@@ -1,5 +1,5 @@
 # JDBC-MySQL-Application
-# JDBC NOTES BY Mr. CHETAN GHODEKAR
+### JDBC NOTES BY Mr. CHETAN GHODEKAR
 
    ## Q1. What is API ?
           1) API stands for Application Programming Interface.
