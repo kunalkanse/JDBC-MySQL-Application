@@ -32,6 +32,15 @@ public class Jdbc10_StoreResultArrayList {
                 System.out.println(p.getProductName());
             }
 
+            /*
+                Asus_Rog_5
+                X-BOX
+                PS-5
+                CONSOLE
+                CHARGER
+                CPU
+            */
+
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
