@@ -1,8 +1,8 @@
-package JdbcDemoApplication.Jdbc12_CollableStatement;
+package JdbcDemoApplication.Jdbc11_CollableStatement;
 
 import java.sql.*;
 
-public class Jdbc12_CollableStatement02 {
+public class Jdbc11_CollableStatement02 {
     public static void main(String[] args) {
         try {
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/empj2ee","root","Kunal@447");
