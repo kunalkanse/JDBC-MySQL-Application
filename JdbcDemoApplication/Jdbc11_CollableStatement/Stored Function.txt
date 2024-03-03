@@ -5,7 +5,7 @@
 
 DELIMITER $$
 
-CREATE
+CREATE 
     FUNCTION `empj2ee`.`addTwoNumbers`(no1 INT,no2 INT) 
     RETURNS INT
     DETERMINISTIC 
