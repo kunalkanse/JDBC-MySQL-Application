@@ -18,5 +18,5 @@ public class Jdbc11_CollableStatement02 {
         } catch (SQLException e) {
             System.out.println(e);
         }
-    }
+    } 
 }
