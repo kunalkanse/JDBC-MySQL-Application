@@ -1,0 +1,124 @@
+
+
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+
+DELIMITER $$
+
+CREATE 
+    FUNCTION `empj2ee`.`addTwoNumbers`(no1 INT,no2 INT) 
+    RETURNS INT
+    DETERMINISTIC 
+    
+    BEGIN
+	DECLARE res INT;
+	SET res = no1+no2;
+	RETURN res;
+    END$$
+
+DELIMITER ;
+
+SELECT addTwoNumbers(10,20);
+
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+
+DELIMITER $$
+
+CREATE
+    FUNCTION `empj2ee`.`checkEvenOdd`(no1 INT)
+    RETURNS VARCHAR(30)
+    DETERMINISTIC
+    
+    BEGIN
+    DECLARE output VARCHAR(30);
+    DECLARE rem INT;
+    
+    SET rem = MOD(no1,2);
+    
+    IF (rem = 0) THEN
+	SET output = 'EVEN NUMBER';
+    ELSE
+	SET output = 'ODD NUMBER';
+	END IF;
+
+    RETURN output;	
+
+    END$$
+
+DELIMITER ;
+
+
+select checkEvenOdd(4);
+
+/////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+
+DELIMITER $$
+
+CREATE
+    FUNCTION `empj2ee`.`MaxOfTheThree`(num1 INT,num2 INT, num3 INT)
+    RETURNS INT
+    DETERMINISTIC 
+    
+    BEGIN
+    
+    DECLARE maxNum INT;
+    
+    IF (num1>=num2 AND num1>=num3) THEN
+        SET maxNum = num1;
+    ELSEIF (num2>=num1 AND num2>=num3) THEN
+        SET maxNum = num2;
+    ELSE
+        SET maxNum = num3;
+        END IF;
+        
+    RETURN maxNum; 
+
+    END$$
+
+DELIMITER ;
+
+SELECT maxOfTheThree(45,70,13);
+
+////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+
+DELIMITER $$
+
+CREATE
+    FUNCTION `empj2ee`.`studentGrade`(m1 INT,m2 INT,m3 INT)
+    RETURNS VARCHAR(30)
+    DETERMINISTIC
+    
+    BEGIN
+    
+    DECLARE per INT;
+    DECLARE grade VARCHAR(30);
+    
+    SET per = (m1+m2+m3)/3;
+    
+    IF (per >= 70) THEN
+	SET grade = 'distinction';
+    ELSEIF (per BETWEEN 60 AND 70) THEN
+        SET grade = 'first class';
+    ELSEIF (per BETWEEN 50 AND 60) THEN
+        SET grade = 'higher second';
+    ELSEIF (per BETWEEN 40 AND 50) THEN   
+        SET grade = 'second class';
+    ELSEIF (per BETWEEN 35 AND 40) THEN
+        SET grade = 'pass';
+    ELSE
+        SET grade = 'fail';
+        
+        END IF;
+        
+    RETURN grade;                 
+
+    END$$
+
+DELIMITER ;
+
+
+////////////////////////////////////////////////////////////
+
