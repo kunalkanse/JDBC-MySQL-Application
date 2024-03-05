@@ -1,5 +1,5 @@
 # JDBC-MySQL-Application
-### JDBC NOTES BY Mr. CHETAN GHODEKAR
+### JDBC NOTES BY Mr.CHETAN GHODEKAR SIR
 
    ## Q1. What is API ?
           1) API stands for Application Programming Interface.
@@ -24,14 +24,14 @@
           table record will be store into resultset object
           
    ## What is Maven?
-         Maven is a Project Management tool specifically dev. for javaapplication.
-         By using Maven we can automate the project Management process.
-         The Maven tool is developed by Apache Software Foundation.
-         So with the help of maven developers can easily create project structure.
-         Superior dependency management i.e. Project will automatic  updating, dependency closure.
-         Dependency management :- Maven encourages to use a central repository of jars and other dependencies.
-         Maven is a build automation tool used primarily for Java projects.
-         Maven can also be used to build and manage projects written in C#, Ruby, Scala etc.
+         1) Maven is a Project Management tool specifically dev. for javaapplication.
+         2) By using Maven we can automate the project Management process.
+         3) The Maven tool is developed by Apache Software Foundation.
+         4) So with the help of maven developers can easily create project structure.
+         5) Superior dependency management i.e. Project will automatic  updating, dependency closure.
+            Dependency management :- Maven encourages to use a central repository of jars and other dependencies.
+         6) Maven is a build automation tool used primarily for Java projects.
+         7) Maven can also be used to build and manage projects written in C#, Ruby, Scala etc.
          
    ## What are the Steps to develop a JDBC app?
          we have to follow 6 steps to developed jdbc app
@@ -68,32 +68,32 @@
          compiled once and executed multiple times.In Prepared Statement(I) Supports Placeholders for dynamic values.
          
    ## What is a placeholder?
-         A SQL prepared statement in JDBC terms is a complete SQL
-         statement with placeholders for values. The placeholder is the
-         question mark and is replaced with a value at run time.
-         A placeholder is a character, word, or string of characters that
+         1) A SQL prepared statement in JDBC terms is a complete SQL
+         statement with placeholders for values. 
+         2) The placeholder is the question mark and is replaced with a value at run time.
+         3) A placeholder is a character, word, or string of characters that
          temporarily takes the place of the final data.
          
    ## What is Callable statement ?
-         A Callable statement is a special purpose statement which can be
-         used to execute stored functions and stored procedures.
-         Callable statement(I) extends the properties of prepared Statement.
+         1) A Callable statement is a special purpose statement which can be
+            used to execute stored functions and stored procedures.
+         2) Callable statement(I) extends the properties of prepared Statement.
          To create a platform by using Callable statements we need to call the
          PrepareCall() method.
          
    ## What is Stored Function ?
-         Stored Function can be used to develop business logic by using sql.
-         It acts as a container for different sql statements.
-         Stored functions are based on reusability components in case
+         1) Stored Function can be used to develop business logic by using sql.
+         2) It acts as a container for different sql statements.
+         3) Stored functions are based on reusability components in case
          Database.
-         To develop a Stored function We have to use special syntax and rules
+         4) To develop a Stored function We have to use special syntax and rules
          of sql.
         
    ## What is the stored procedure ?
-        Stored procedure acts as a container for multiple sql queries.
-        We can use stored procedures to execute different sql query at same
+        1) Stored procedure acts as a container for multiple sql queries.
+        2) We can use stored procedures to execute different sql query at same
         time.
-        We can not develop simple business logic using procedure.
+        3) We can not develop simple business logic using procedure.
         
    ## Explain DAO/DTO design pattern
         A) DAO/DTO design pattern is mainly used in the developed of
