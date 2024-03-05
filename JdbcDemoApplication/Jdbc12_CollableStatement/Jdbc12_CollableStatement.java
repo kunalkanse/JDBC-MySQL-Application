@@ -16,7 +16,7 @@ public class Jdbc12_CollableStatement {
 
             ResultSet rs = cstm.executeQuery();
 
-            if(rs.next())
+            if(rs.next()) 
             {
                 System.out.println("ADDITION IS : "+rs.getInt(1));
             }
