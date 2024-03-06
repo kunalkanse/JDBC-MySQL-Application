@@ -11,7 +11,7 @@ public class Jdbc13_StoredProcedure01 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("ENTER EMPLOYEE ID :");
-        int empId = scanner.nextInt();
+        int empId = scanner.nextInt(); 
 
         System.out.println("ENTER EMPLOYEE NAME : ");
         String empName = scanner.next();
