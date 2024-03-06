@@ -9,7 +9,7 @@ public class Jdbc13_RetrieveMultipleTable {
     public static void main(String[] args) {
         try {
             CallableStatement cstmt = DriverManager.getConnection("jdbc:mysql://localhost:3306/empj2ee","root","Kunal@447").prepareCall("{call RetrieveMultipleTableProcedure()}");
-
+ 
             ResultSet r1 = cstmt.executeQuery();
 
             while(r1.next()){
