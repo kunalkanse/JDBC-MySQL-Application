@@ -1,0 +1,55 @@
+
+
+DELIMITER $$
+
+USE empj2ee$$
+
+DROP PROCEDURE IF EXISTS empProcedure$$
+
+CREATE DEFINER=root@localhost PROCEDURE empProcedure(empId INT,empName VARCHAR(25),empDept VARCHAR(25),empSalary DOUBLE,uName VARCHAR(50),uEmail VARCHAR(45),uNo VARCHAR(10),uPassword VARCHAR(20))
+BEGIN
+
+		INSERT INTO emp1 VALUES (empId,empName,empDept,empSalary);
+		INSERT INTO registration (user_name,user_email ,user_mobile_no ,user_password )VALUES (uName,uEmail ,uNo ,uPassword );
+	END$$
+
+DELIMITER ;
+
+CALL empProcedure(10,'ggg','fff',7878,'uuu1','uuu@gmail.com','6758675867','etrytt23');
+
+ ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+DELIMITER $$
+
+USE empj2ee$$
+
+DROP PROCEDURE IF EXISTS empProcedure$$
+
+CREATE DEFINER=root@localhost PROCEDURE RetrieveMultipleTableProcedure()
+	BEGIN
+		SELECT * FROM emp1;
+		SELECT * FROM registration;
+	END$$
+
+DELIMITER ;
+
+// Returns 2 ResultSet
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+DELIMITER $$
+
+USE `jiomart2`$$
+
+DROP PROCEDURE IF EXISTS `orderDetails`$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `orderDetails`(newQty DOUBLE, prd INT)
+BEGIN
+		UPDATE product SET prod_qty = prod_qty - newQty WHERE prod_id = prd;
+	END$$
+
+DELIMITER ;`
