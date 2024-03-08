@@ -18,7 +18,7 @@
           oriented format.
           B)Connection :- It provides a network between java and database
           applications.
-          C) Statement :- It acts as an input container. which means we can
+          C) Statement :- It acts as an input container. which means we can 
           write sql instruction by using statement object
           D) ResultSet :- It acts as an output Container. which means multiple
           table record will be store into resultset object
